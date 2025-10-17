@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZİRVE ERKEK KUAFÖRÜ — VIP Hizmet</title>
+  <meta name="description" content="Zirve Erkek Kuaförü - VIP Saç Kesim & Bakım Hizmetleri" />
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter,sans-serif;background:#000;color:#e8e6e2;line-height:1.4}
+    header{position:absolute;top:20px;left:50%;transform:translateX(-50%);width:94%;max-width:1200px;display:flex;justify-content:space-between;align-items:center;z-index:30}
+    .logo{font-weight:800;font-size:20px;color:#ffd66b;text-shadow:0 0 18px rgba(255,214,107,0.25)}
+    nav ul{display:flex;gap:18px;list-style:none}
+    nav a, .btn{color:#ffd700;text-decoration:none;padding:14px 28px;border-radius:999px;font-weight:800;background:linear-gradient(90deg,#ffd700,#555,#333);box-shadow:0 0 25px rgba(255,215,0,0.8);transition:0.5s;animation:pulse 2s infinite alternate;display:inline-block}
+    nav a:hover, .btn:hover{box-shadow:0 0 50px rgba(255,215,0,1);transform:scale(1.08)}
+    @keyframes pulse{from{box-shadow:0 0 10px rgba(255,215,0,0.5);}to{box-shadow:0 0 40px rgba(255,215,0,1);}}
+    section{padding:50px 20px;min-height:100vh}
+    h2,h1{color:#ffd700;text-shadow:0 0 25px #ffd700,0 0 35px #fff;margin-bottom:14px}
+    .services,.pricing,.gallery{display:grid;gap:20px}
+    .services{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .card,.price{padding:24px;border-radius:16px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.2));border:1px solid rgba(255,214,107,0.08);backdrop-filter:blur(3px)}
+    .card h4,.price h3{color:#ffd700;margin-bottom:10px}
+    .card p,.price li{color:#e8e6e2;margin:5px 0}
+    .price .amount{font-size:30px;font-weight:900;margin-top:8px}
+    .gallery{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+    .gallery img{width:100%;height:240px;object-fit:cover;border-radius:14px;border:1px solid rgba(255,215,0,0.06);cursor:pointer;transition:0.4s}
+    .gallery img:hover{transform:scale(1.08)}
+    .modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);justify-content:center;align-items:center;z-index:50}
+    .modal-content{background:#111;padding:24px;border-radius:16px;max-width:550px;width:90%;color:#fff;text-align:center;position:relative}
+    .close{position:absolute;top:12px;right:18px;font-size:26px;cursor:pointer;color:#ffd700}
+    footer{padding:40px 20px;background:linear-gradient(180deg,rgba(0,0,0,0.5),rgba(0,0,0,0.65));border-top:1px solid rgba(255,215,0,0.05);color:#fff;text-align:center}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">ZİRVE <span style="color:#fff">ERKEK</span> <span style="color:#ffd700">KUAFÖRÜ</span></div>
+    <nav>
+      <ul>
+        <li><a href="#hakkimizda">Hakkımızda</a></li>
+        <li><a href="#hizmetler">Hizmetler</a></li>
+        <li><a href="#galeri">Saç Galerisi</a></li>
+        <li><a href="#fiyatlar">VIP Paketler</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hakkimizda">
+    <h2>Hakkımızda</h2>
+    <p>Zirve Erkek Kuaförü; modern kesimler, klasik traşlar ve kişiye özel VIP hizmet anlayışıyla hizmet verir. Uzman ustalarımız en yeni teknikleri kullanır; konforlu VIP alanımızda saçınız ve imajınız için en kaliteli malzemeler tercih edilir.</p>
+  </section>
+
+  <section id="hizmetler">
+    <h2>Hizmetlerimiz</h2>
+    <div class="services">
+      <div class="card"><h4>VIP Saç Kesimi</h4><p>Özel analiz, kişisel stil danışmanlığı ve son teknoloji makinelerle kusursuz kesim</p></div>
+      <div class="card"><h4>Sakal Tasarımı</h4><p>Keskin hatlar ve uzun süreli görünüm için detaylı rötuş</p></div>
+      <div class="card"><h4>Ritüel Bakım</h4><p>Profesyonel ürünlerle saç maskesi ve sıcak havlu uygulaması</p></div>
+      <div class="card"><h4>Keratin & Canlandırma</h4><p>Saçı onaran ve parlaklık veren profesyonel keratin uygulamaları</p></div>
+    </div>
+  </section>
+
+  <section id="galeri">
+    <h2>Saç Galerisi</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/400x400?text=Saç+1" data-title="VIP Saç Kesimi" data-price="₺250" data-info="Özel analiz, kişisel stil danışmanlığı ve son teknoloji makinelerle kusursuz kesim">
+      <img src="https://via.placeholder.com/400x400?text=Saç+2" data-title="Sakal Tasarımı" data-price="₺150" data-info="Keskin hatlar, detaylı rötuş ve bakım ürünleri ile uzun süreli görünüm">
+      <img src="https://via.placeholder.com/400x400?text=Saç+3" data-title="Ritüel Bakım" data-price="₺200" data-info="Saç maskesi, sıcak havlu ve profesyonel ürünlerle lüks bakım deneyimi">
+    </div>
+  </section>
+
+  <section id="fiyatlar">
+    <h2>VIP Paketler</h2>
+    <div class="pricing">
+      <div class="price"><h3>Gold Paket</h3><div class="amount">₺250</div><ul><li>VIP saç kesimi</li><li>Sakal düzeltme</li><li>Hızlı stil</li></ul></div>
+      <div class="price"><h3>Platinum Paket</h3><div class="amount">₺350</div><ul><li>VIP saç kesimi + sakal tasarımı</li><li>Ritüel bakım</li><li>Özel ürün hediyesi</li></ul></div>
+      <div class="price"><h3>Diamond Paket</h3><div class="amount">₺500</div><ul><li>Tüm VIP hizmetler</li><li>Keratin & saç canlandırma</li><li>Kişisel stil danışmanlığı</li></ul></div>
+    </div>
+  </section>
+
+  <section id="iletisim">
+    <h2>İletişim</h2>
+    <p>Adres: Zirve Erkek Kuaförü, İstanbul<br>Telefon: +90 555 123 4567<br>Email: info@zirvekuafor.com</p>
+  </section>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close" id="close">&times;</span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-price" style="color:#ffd700;font-weight:700;"></p>
+      <p id="modal-info"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Zirve Erkek Kuaförü. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script>
+    const modal = document.getElementById('modal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalPrice = document.getElementById('modal-price');
+    const modalInfo = document.getElementById('modal-info');
+    const closeBtn = document.getElementById('close');
+
+    document.querySelectorAll('.gallery img').forEach(img => {
+      img.addEventListener('click', () => {
+        modal.style.display = 'flex';
+        modalTitle.textContent = img.dataset.title;
+        modalPrice.textContent = img.dataset.price;
+        modalInfo.textContent = img.dataset.info;
+      });
+    });
+
+    closeBtn.addEventListener('click', () => { modal.style.display = 'none'; });
+    window.addEventListener('click', e => { if(e.target === modal) modal.style.display = 'none'; });
+  </script>
+</body>
+</html>
